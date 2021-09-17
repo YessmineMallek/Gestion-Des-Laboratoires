@@ -1,0 +1,78 @@
+ <!--sidebar start-->
+ <aside>
+    <div id="sidebar" class="nav-collapse ">
+      <!-- sidebar menu start-->
+      <ul class="sidebar-menu" id="nav-accordion">
+        <p class="centered"><a href="profile.html"><img src="" class="img-circle" width="80"></a></p>
+        <h5 class="centered" *ngIf="dataLoded">{{personne[0].nomDirecteur}}</h5>
+        
+        
+        <li class="mt" *ngIf="getGrade()==='directeur'">
+          <a class="active" routerLink="directeur">
+            <i class="fa fa-dashboard"></i>
+            <span>Dashboard</span>
+            </a>
+        </li>
+
+        <li class="mt" *ngIf="getGrade()==='admin'">
+          <a class="active" routerLink="admin">
+            <i class="fa fa-dashboard"></i>
+            <span>Dashboard</span>
+            </a>
+        </li>
+
+
+        <!--admin items-->
+        <li class="sub-menu" *ngIf="getGrade()==='admin'">
+          <a href="javascript:;" routerLink="admin/addLabo">
+            <i class="fa fa-cogs"></i>
+            <span>Ajouter Un Laboratoire</span>
+            </a>
+         
+          
+        </li>
+        
+
+        <li class="sub-menu" *ngIf="getGrade()==='admin'">
+          <a href="javascript:;">
+            <i class="fa fa-desktop"></i>
+            <span >Directeurs</span>
+            </a>
+          <ul class="sub">
+            <li ><a style="color: white;" routerLink="admin/listDirecteur">List des Directeurs</a></li>
+            <li ><a style="color: white;" routerLink="inscriptionDirecteur">Ajouter Directeur</a></li>
+           
+          </ul>
+        </li>
+
+
+
+
+        <!--Directeur items-->
+        <li class="sub-menu" *ngIf="getGrade()==='directeur'">
+          <a href="javascript:;">
+            <i class="fa fa-desktop"></i>
+            <span>Laboratoire</span>
+            </a>
+          <ul class="sub">
+            <li><a  style="color: white;" routerLink="directeur/edit">Modifier Labo</a></li>
+           
+          </ul>
+        </li>
+        <li class="sub-menu" *ngIf="getGrade()==='directeur'">
+          <a href="javascript:;">
+            <i class="fa fa-cogs"></i>
+            <span>Mon Compte</span>
+            </a>
+          <ul class="sub">
+            <li><a  style="color: white;" routerLink="inscriptionDirecteur">Modifier Mes Données</a></li>
+            <li><a  style="color: white;"routerLink="directeur/modifierPassword">Changer Mot de Passe</a></li>
+            
+          </ul>
+        </li>
+     
+      </ul>
+      <!-- sidebar menu end-->
+    </div>
+  </aside>
+  <!--sidebar end-->

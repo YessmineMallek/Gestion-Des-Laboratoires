@@ -1,0 +1,67 @@
+
+        <div class="row flex-grow"  style="height: auto;"  *ngIf="dataLoded" > 
+            <div class="col-lg-4 mx-auto" style="background-color:white;"  data-aos="fade-up">
+              <div class="auth-form-light text-left p-5">
+                <div class="brand-logo">
+                  <img src="assets/login/images/logo.svg">
+                </div>
+                <div *ngIf="role==='directeur'">
+                  <h4>Modifier Vos Données</h4>
+
+                </div>
+                <div *ngIf="role==='admin'">
+                  <h4>Ajouter un Nouveau Directeur</h4>
+                <h6 class="font-weight-light">L'inscription des directeurs est facile. Cela ne prend que quelques étapes</h6>
+                </div>
+                
+                <form class="pt-3" [formGroup]="inscriptionForm"  ngNativeValidate data-aos="zoom-out">
+                
+                <!--cin-->
+                <div class="form-group">
+                    <input type="text" class="form-control form-control-lg"  placeholder="cin" formControlName="cin" >
+                  </div>
+
+                  <!--email-->
+                  <div class="form-group">
+                    <input type="email" class="form-control form-control-lg"  placeholder="Email"  formControlName="email" >
+                  </div>
+
+                  <!--Nom complet du directeur-->
+                  <div class="form-group">
+                    <input type="text" class="form-control form-control-lg"  placeholder="nom complet"  formControlName="nomDirecteur" >
+
+                  </div>
+
+                  <!--date-->
+                  <div class="form-group">
+                    <input type="date" class="form-control form-control-lg"  placeholder="directeur depuis"  formControlName="directeurDepuis">
+
+                  </div>
+
+
+                  <!--telephone-->
+                  <div class="form-group">
+                    <input type="text" class="form-control form-control-lg"  placeholder="telephone Mobile"  formControlName="telephoneMobile">
+                  </div>
+
+                  <!--password-->
+                  <div class="form-group" >
+                    <input type="password" class="form-control form-control-lg" id="exampleInputPassword1" placeholder="Password" formControlName="password">
+                  </div>
+
+
+                    <div align="center">
+                      <button class="btn btn-theme" type="submit"  style="width: 40%;" (click)="createDirecteur()" *ngIf="role==='admin'">Ajouter</button>
+
+                      <button class="btn btn-theme" type="submit"  style="width: 40%;"   (click)="updateeDirecteur()"  *ngIf="role!=='admin'">mettre A Jour</button>
+                    </div>
+                  
+                   
+                  
+                </form>
+              </div>
+            </div>
+          </div>
+    
+      <!-- page-body-wrapper ends -->
+  

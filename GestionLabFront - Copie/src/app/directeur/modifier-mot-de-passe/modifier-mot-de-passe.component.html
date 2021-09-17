@@ -1,0 +1,38 @@
+<div class="row flex-grow"  style="height: auto; margin-top: 10%;"  > 
+    <div class="col-lg-4 mx-auto" style="background-color:white ;  margin-left: 3%;margin-bottom: 3%;"  data-aos="fade-up">
+      <div class="auth-form-light text-left p-5">
+        <div class="brand-logo">
+          <img src="assets/login/images/logo.svg">
+        </div>
+        <h4>Modifier Mot De Passe</h4>
+        
+        <form class="pt-3" [formGroup]="modifierMotDePasseForm"  ngNativeValidate data-aos="zoom-out">
+        
+       
+
+          <!--password-->
+          <div class="form-group">
+            <input type="password" class="form-control form-control-lg"  placeholder="ancien Mot De Passe" formControlName="password">
+          </div>
+          
+          <!--password-->
+          <div class="form-group">
+            <input type="password" class="form-control form-control-lg" placeholder="nouveauMotDePasse" formControlName="newPassword">
+          </div>
+
+
+
+          <div class="form-group"  align="center">
+            <button class="btn btn-theme" type="submit"  (click)="modifierMotDePasse()" >Mettre A Jour</button>
+          </div>
+          
+         
+          
+        </form>
+      </div>
+    </div>
+  </div>
+
+<!-- page-body-wrapper ends -->
+
+

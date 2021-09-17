@@ -1,0 +1,113 @@
+package GestionLabo.service;
+
+import java.util.Iterator;
+import java.util.Optional;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import GestionLabo.model.Laboratoire;
+import GestionLabo.repository.LaboratoireRepository;
+import lombok.Data;
+
+@Data
+@Service
+public class LaboratoireService {
+	@Autowired
+	private LaboratoireRepository laboRep;
+	
+	
+	
+	//afficher tous les laboratoires
+	public Iterable<Laboratoire> getAllLabo()
+	{
+		Iterator<Laboratoire> itLab=laboRep.findAll().iterator();
+		
+		return laboRep.findAll();
+	}
+	
+	//ajouter une laboratoire a la base de donnée
+	
+	public Laboratoire addLabo (Laboratoire labToAdd)
+	{
+		Laboratoire lab=null;
+		try
+		{
+			lab= laboRep.save(labToAdd);
+
+		}catch (Exception ex )
+		{
+			if (ex instanceof java.sql.SQLIntegrityConstraintViolationException || ex instanceof  [36mo.h.engine.jdbc.spi.SqlExceptionHelper  [0;39m )
+			{	
+				System.out.println("existe deja");
+				return null;
+			}
+		
+		}
+		return lab;
+		
+	}
+		
+	
+	
+	//mise a jour
+	
+	  public Laboratoire update (Laboratoire labDonné , int code) {
+	  
+		  
+		  
+	Iterable<Laboratoire> lesLabs=this.getAllLabo(); Iterator<Laboratoire>
+	  it=lesLabs.iterator(); 
+		Laboratoire lab = null;
+	  
+	  while(it.hasNext()) {
+				  lab=it.next(); 
+				  
+				  if(lab.getCode()==code) 
+				  {
+				  
+				  lab.setType(labDonné.getType());
+				  
+				  lab.setDenomination(labDonné.getDenomination()) ;
+				  lab.setNomCompletEnArabe(labDonné.getNomCompletEnArabe());
+				  lab.setNomCompletEnAnglais(labDonné.getNomCompletEnAnglais());
+				  lab.setAcronyme(labDonné.getAcronyme());
+				  lab.setDateCreation(labDonné.getDateCreation());
+				  lab.setUniversite(labDonné.getUniversite());
+				  lab.setInstitution(labDonné.getInstitution());
+				  lab.setDomaine(labDonné.getDomaine());
+				  lab.setDiscipline(labDonné.getDiscipline());
+				  lab.setSpecialite(labDonné.getSpecialite());
+				  lab.setSiteWeb(labDonné.getSiteWeb()); 
+				  lab.setTelephone(labDonné.getTelephone());
+				  lab.setFax(labDonné.getFax());
+				  lab.setAdresseOfficielle(labDonné.getAdresseOfficielle()); 
+				  return  this.laboRep.save(lab);
+				  } 
+	  }
+	  return null;
+	  }	 
+	
+	//supprimer la laboratoire
+	
+	public void delete(String code)
+	{
+		 laboRep.deleteById(code);
+	}
+	
+	
+	//findByCode
+	public  Laboratoire fingByCode(int code)
+	{
+		Iterator<Laboratoire> labIt=this.getAllLabo().iterator();
+		while (labIt.hasNext())
+		{
+			Laboratoire l=labIt.next();
+			if(l.getCode()==code)
+				return l;
+		}
+	return null;
+	}
+	
+	
+}

@@ -1,0 +1,39 @@
+
+          <form [formGroup]="addLaboratoireForm" (submit)="AddLabo()">
+         <p>
+    <input  formControlName="Type" class="form-control" type="text" placeholder="Default input" aria-label="default input example">
+
+    
+      </p>
+      <p>
+        <input  formControlName="DenominationEnFrancais" formControlName="Type" class="form-control" type="text" placeholder="Default input" aria-label="default input example">
+
+        
+      </p>
+      <p>
+        <input  formControlName="NomCompletEnArabe" formControlName="Type" class="form-control" type="text" placeholder="Default input" aria-label="default input example">
+
+        
+      </p>
+
+
+      <p>
+        <input  formControlName="NomCompletEnAnglais" formControlName="Type" class="form-control" type="text" placeholder="Default input" aria-label="default input example">
+
+       
+      </p>
+
+      <p>
+        <input  formControleName="Acronyme" formControlName="Type" class="form-control" type="text" placeholder="Default input" aria-label="default input example">
+
+        
+      </p>
+       <p>
+        <input formControleName="Code" formControlName="Type" class="form-control" type="text" placeholder="Default input" aria-label="default input example">
+
+      
+      </p>
+      
+    </form>
+
+    
