@@ -7,8 +7,8 @@ Outils Utilisés:-Visual Studio Code,
 Préparez l'environnement de développement:
 1) installer xamp 
 2) Creer une base de donnée avec le nom "gestionlabo" apres importer le fichier "gestionlabo.sql" 
-	NB:Il faut bien changer l'email et le mot de passe de L'admin
+	NB:Il Faut bien changer L'email et le Mot de Passe de L'admin
 3) Téléchargez et installez la dernière version LTS de Node.js ici :(https://nodejs.org/en/download/).
 4)Ouvrir dans VS Code le fichier "GestionLabFront".
-5)Dans spring boot tool suite importer le fichier "BackGestionLabo".
+5)Dans spring boot tool suite (https://spring.io/tools) importer le fichier "BackGestionLabo".
 			*)File--> Import -->Existing Projects into Workspace 
