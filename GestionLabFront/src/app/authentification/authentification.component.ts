@@ -64,7 +64,7 @@ export class AuthentificationComponent implements OnInit {
       //si l'email saisie n'existe pas dans la base de données
         }
         else{
-          this.snackBar.open("Votre Compt n'existe pas","",
+          this.snackBar.open("Ce Compt n'existe pas","",
           {duration: 3000,
           verticalPosition:"bottom"})
         } 
