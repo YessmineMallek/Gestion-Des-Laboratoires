@@ -3,6 +3,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup,FormsModule, Validators} from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
 import { MatSnackBar } from '@angular/material/snack-bar';
+import { Router } from '@angular/router';
 import { Directeur } from 'src/app/entites/directeur';
 import { Laboratoire } from 'src/app/entites/laboratoire';
 import { DirecteurService } from 'src/app/services/directeur.service';
@@ -22,7 +23,7 @@ export class AddLabComponent implements OnInit {
 
   constructor(private formBuilder:FormBuilder,
     private laboServ:LabService,
-    private userService:UsersService,private snackBar:MatSnackBar,private laboDirecteur:DirecteurService ) {  }
+    private userService:UsersService,private snackBar:MatSnackBar,private laboDirecteur:DirecteurService,private route:Router ) {  }
     existe=false;
 
   ngOnInit(): void {
@@ -100,7 +101,7 @@ export class AddLabComponent implements OnInit {
                     this.laboServ.addLabo(this.laboratoire).subscribe(
                       data=>{
                         this.snackBar.open("Ajout Effectuée avec Succés ",'',{verticalPosition:"bottom"})
-                      
+                        this.route.navigateByUrl("/admin/listLabo")
                       },
                       error=> {
                         this.errMsg=error;

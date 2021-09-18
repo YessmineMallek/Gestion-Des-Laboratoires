@@ -66,7 +66,7 @@ export class EditLabDirecComponent implements OnInit {
 
        } else// le directeur n'admet pas du laboratoire
        {
-          this.snackBar.open("Vous-Etes  affecté a aucune Laboratoire")
+          this.snackBar.open("Vous-Etes  affecté a aucun Laboratoire")
        }
       }
         
