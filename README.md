@@ -1,8 +1,9 @@
 # Gestion Des Laboratoires
 
-#### Outils Utilisés:<br /> -Visual Studio Code,<br /> 
-		-spring boot tool suite<br /> 
-		-Xamp (pour la base de donnée)<br /> 
+#### Outils Utilisés:<br />
+-Visual Studio Code,<br /> 
+-spring boot tool suite<br /> 
+-Xamp (pour la base de donnée)<br /> 
 
 #### Préparez l'environnement de développement:
 <br /> 
