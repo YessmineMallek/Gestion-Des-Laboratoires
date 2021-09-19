@@ -7,7 +7,7 @@
 
 #### Préparez l'environnement de développement:
 <br /> 
-1. installer xamp <br />
+1. installer Xampp (https://www.apachefriends.org/fr/download.html)<br />
 2. Creer une base de donnée avec le nom "gestionlabo" apres importer le fichier "gestionlabo.sql" 
 	NB:Il Faut bien changer L'email et le Mot de Passe de L'admin<br />
 3. Téléchargez et installez la dernière version LTS de Node.js ici :(https://nodejs.org/en/download/).<br />
