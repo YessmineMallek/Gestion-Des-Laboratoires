@@ -5,6 +5,10 @@
 -spring boot tool suite<br /> 
 -Xamp (pour la base de donnée)<br /> 
 
+#### Api Documentation:<br />
+http://localhost:8081/swagger-ui.html#/ <br /> 
+
+
 #### Préparez l'environnement de développement:
 <br /> 
 1. installer Xampp (https://www.apachefriends.org/fr/download.html)<br />
