@@ -12166,3 +12166,12 @@ org.eclipse.jface.text.BadLocationException: null
 2021-10-04 22:05:36,213 [Worker-2: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
 2021-10-04 22:05:36,213 [Worker-2: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\USER\Desktop\satge été2021\GestionLabo\BackGestionLabo\src\test\resources
 2021-10-04 22:18:59,896 [Worker-3: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2021-10-04 22:26:10,787 [Worker-1: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2021-10-04 22:27:06,243 [Worker-3: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2021-10-04 22:27:15,244 [Worker-1: Launching BackGestionLabo - BackGestionLaboApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-10-04 22:27:15,244 [Worker-1: Launching BackGestionLabo - BackGestionLaboApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-10-04 22:27:15,247 [Worker-1: Launching BackGestionLabo - BackGestionLaboApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2021-10-04 22:27:15,260 [Worker-1: Launching BackGestionLabo - BackGestionLaboApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2021-10-04 22:27:15,263 [Worker-1: Launching BackGestionLabo - BackGestionLaboApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2021-10-04 22:27:15,263 [Worker-1: Launching BackGestionLabo - BackGestionLaboApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2021-10-04 22:27:15,263 [Worker-1: Launching BackGestionLabo - BackGestionLaboApplication] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\USER\Desktop\satge été2021\GestionLabo\BackGestionLabo\src\test\resources
