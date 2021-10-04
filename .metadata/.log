@@ -524,3 +524,21 @@ java.lang.Exception: The project description file (.project) for 'GestionLabo' i
 	at org.eclipse.core.internal.refresh.RefreshJob.runInWorkspace(RefreshJob.java:166)
 	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:42)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY Activator 1 0 2021-10-04 22:08:51.099
+!MESSAGE Has main method computation for project 'BackGestionLabo'
+
+!ENTRY Activator 1 0 2021-10-04 22:08:52.174
+!MESSAGE Has main method computation for project 'BackGestionLabo'
+
+!ENTRY Activator 1 0 2021-10-04 22:08:52.888
+!MESSAGE Has main method computation for project 'BackGestionLabo'
+
+!ENTRY Activator 1 0 2021-10-04 22:08:55.294
+!MESSAGE Has main method computation for project 'BackGestionLabo'
+
+!ENTRY Activator 1 0 2021-10-04 22:08:59.390
+!MESSAGE Has main method computation for project 'BackGestionLabo'
+
+!ENTRY Activator 1 0 2021-10-04 22:09:06.643
+!MESSAGE Has main method computation for project 'BackGestionLabo'
