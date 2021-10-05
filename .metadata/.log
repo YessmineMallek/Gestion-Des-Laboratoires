@@ -839,3 +839,18 @@ This warning can be switched off on the Team > Git > Confirmations and Warnings 
 
 !ENTRY Activator 1 0 2021-10-04 22:27:15.624
 !MESSAGE Has main method computation for project 'BackGestionLabo'
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-10-04 22:34:35.569
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.JyyYBFqG
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-10-04 22:34:35.570
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.JyyYBFqG
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-10-04 22:34:35.570
+!MESSAGE subsribers = {}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-10-04 22:34:35.571
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.JyyYBFqG => OK
+
+!ENTRY org.eclipse.ui 2 2 2021-10-04 22:34:36.231
+!MESSAGE Invalid property category path: org.springframework.ide.eclipse.beans.ui.properties.ProjectPropertyPage (bundle: org.springframework.ide.eclipse.xml.namespaces, propertyPage: org.springframework.ide.eclipse.beans.ui.namespaces.projectPropertyPage)

@@ -27,6 +27,7 @@ export class HeaderComponent implements OnInit {
 
    }
   }
+ //pour l'affichage des buttons deconnexion 
   getetat()
 {
   return this.auth.getEtat();
